@@ -12,7 +12,7 @@ function HomePage() {
             Your AI-driven guide to uncovering fascinating city destinations effortlessly
           </p>
           <Link href="/chat" className="btn btn-secondary">
-            Let's get started!
+            Let&#39;s get started!
           </Link>
         </div>
       </div>
