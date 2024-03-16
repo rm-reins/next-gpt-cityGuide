@@ -43,7 +43,7 @@ function Navbar() {
       </div>
 
       <div className="navbar-end">
-        <div className="sm:hidden">
+        <div className="sm:hidden pr-4">
           <NightMode />
         </div>
       </div>
