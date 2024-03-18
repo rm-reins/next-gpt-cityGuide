@@ -5,6 +5,15 @@ import { useAuth } from "@clerk/nextjs";
 
 function ProfileDropdown() {
   const { signOut } = useAuth();
+
+  window.addEventListener("click", function (e) {
+    document.querySelectorAll(".dropdown").forEach(function (dropdown) {
+      if (!dropdown.contains(e.target)) {
+        dropdown.open = false;
+      }
+    });
+  });
+
   return (
     <details className="dropdown">
       <summary>Profile</summary>
