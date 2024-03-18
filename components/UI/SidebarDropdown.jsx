@@ -1,5 +1,5 @@
 import { RiMenu4Line } from "react-icons/ri";
-import NightMode from "./NightMode.jsx";
+import NightMode from "./NightModeProfile.jsx";
 import {
   MdOutlineChat,
   MdOutlineLocationOn,

@@ -6,7 +6,7 @@ import NightMode from "./UI/NightMode.jsx";
 
 function Navbar() {
   return (
-    <div className="navbar bg-base-100 sticky top-0">
+    <div className="navbar bg-base-100 sticky top-0 z-50 shadow-md">
       <div className="navbar-start">
         <div className="sm:hidden flex items-center">
           <Image
@@ -26,7 +26,7 @@ function Navbar() {
             <Link href="/chat">Chat</Link>
           </li>
           <li>
-            <Link href="/tours">Tours</Link>
+            <Link href="/tours/new-tour">New Tour</Link>
           </li>
         </ul>
 
@@ -34,7 +34,7 @@ function Navbar() {
 
         <ul className="menu text-base menu-horizontal px-1">
           <li>
-            <Link href="">New Tour</Link>
+            <Link href="/tours">Tours</Link>
           </li>
           <li>
             <ProfileDropdown />
@@ -43,7 +43,7 @@ function Navbar() {
       </div>
 
       <div className="navbar-end">
-        <div className="sm:hidden pr-4">
+        <div className="pr-4">
           <NightMode />
         </div>
       </div>

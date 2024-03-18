@@ -1,25 +1,25 @@
+"use client";
 import { MdLogout, MdOutlineAccountCircle } from "react-icons/md";
-import NightMode from "./NightMode.jsx";
+import Link from "next/link.js";
+import { useAuth } from "@clerk/nextjs";
 
 function ProfileDropdown() {
+  const { signOut } = useAuth();
   return (
     <details className="dropdown">
       <summary>Profile</summary>
       <ul tabIndex={0} className="p-2 bg-base-100 rounded-t-none">
         <li>
-          <NightMode />
-        </li>
-        <li>
-          <a>
+          <Link href="/profile">
             <MdOutlineAccountCircle className="w-6 h-6" />
             Account
-          </a>
+          </Link>
         </li>
         <li>
-          <a>
+          <button onClick={signOut}>
             <MdLogout className="w-6 h-6" />
             Log Out
-          </a>
+          </button>
         </li>
       </ul>
     </details>
