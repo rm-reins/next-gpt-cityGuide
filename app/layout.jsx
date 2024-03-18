@@ -8,6 +8,9 @@ export const metadata = {
   title: "UrbanIQ Explorer",
   description:
     "UrbanIQ Explorer: Your AI-driven guide to uncovering fascinating city destinations effortlessly!",
+  icons: {
+    icon: "/icon.png",
+  },
 };
 
 export default function RootLayout({ children }) {
