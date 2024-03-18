@@ -10,11 +10,11 @@ function Navbar() {
       <div className="navbar-start">
         <div className="sm:hidden flex items-center">
           <Image
-            className="p-2"
+            className=""
             src="/logo_guide.svg"
             alt="navlogo"
-            width={80}
-            height={80}
+            width={60}
+            height={60}
           />
           <h1 className="text-xl font-bold text-center">UrbanIQ Explorer</h1>
         </div>
