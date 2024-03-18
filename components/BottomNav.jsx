@@ -24,7 +24,7 @@ const links = [
 ];
 
 function BottomNav() {
-  const [isActive, setIsActive] = useState(null);
+  const [isActive, setIsActive] = useState(0);
 
   function handleClick(index) {
     setIsActive((isActive) => (isActive === index ? null : index));
@@ -45,22 +45,6 @@ function BottomNav() {
           </Link>
         );
       })}
-      {/* <Link href="/chat">
-        <MdOutlineChat className="w-6 h-6" />
-        Chat
-      </Link>
-      <Link href="/tours" className="active">
-        <MdOutlineLocationOn className="w-6 h-6" />
-        Tours
-      </Link>
-      <Link href="/tours/new-tour">
-        <MdOutlineAddLocationAlt className="w-6 h-6" />
-        New Tour
-      </Link>
-      <Link href="profile">
-        <MdOutlineAccountCircle className="w-6 h-6" />
-        Profile
-      </Link> */}
     </div>
   );
 }
