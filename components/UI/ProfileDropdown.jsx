@@ -2,15 +2,18 @@
 import { MdLogout, MdOutlineAccountCircle } from "react-icons/md";
 import Link from "next/link.js";
 import { useAuth } from "@clerk/nextjs";
+import { useEffect } from "react";
 
 function ProfileDropdown() {
   const { signOut } = useAuth();
 
-  window.addEventListener("click", function (e) {
-    document.querySelectorAll(".dropdown").forEach(function (dropdown) {
-      if (!dropdown.contains(e.target)) {
-        dropdown.open = false;
-      }
+  useEffect(() => {
+    window.addEventListener("click", function (e) {
+      document.querySelectorAll(".dropdown").forEach(function (dropdown) {
+        if (!dropdown.contains(e.target)) {
+          dropdown.open = false;
+        }
+      });
     });
   });
 
