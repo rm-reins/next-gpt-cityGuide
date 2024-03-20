@@ -5,7 +5,7 @@ const openAI = new OpenAI({
   apiKey: process.env.OPENAI_API_KEY,
 });
 
-export default async function chatResponse(messages) {
+export async function chatResponse(messages) {
   try {
     const resp = await openAI.chat.completions.create({
       messages: [
@@ -24,4 +24,16 @@ export default async function chatResponse(messages) {
     console.log(error);
     return null;
   }
+}
+
+export async function getTour({ city, country }) {
+  return null;
+}
+
+export async function genTourRes({ city, country }) {
+  return null;
+}
+
+export async function createTour(tour) {
+  return null;
 }
