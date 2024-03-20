@@ -1,6 +1,6 @@
 "use client";
 
-import chatResponse from "@/utils/actions.js";
+import { chatResponse } from "@/utils/actions.js";
 import { useMutation } from "@tanstack/react-query";
 import { useState } from "react";
 import toast from "react-hot-toast";
@@ -30,10 +30,8 @@ function Chat() {
   }
 
   return (
-    <div className="flex flex-col justify-between w-full max-w-4xl">
-      <ChatWindow messages={messages} isPending={isPending} />
-
-      <form onSubmit={handleSubmit} className="pt-12">
+    <div className="flex flex-col justify-between w-full max-w-2xl">
+      <form onSubmit={handleSubmit} className="pb-12">
         <div className="join w-full">
           <input
             type="text"
@@ -53,6 +51,7 @@ function Chat() {
           </button>
         </div>
       </form>
+      <ChatWindow messages={messages} isPending={isPending} />
     </div>
   );
 }
