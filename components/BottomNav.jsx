@@ -10,12 +10,12 @@ import {
 
 const links = [
   { href: "/chat", label: "Chat", icon: <MdOutlineChat className="w-6 h-6" /> },
-  { href: "/tours", label: "Tours", icon: <MdOutlineLocationOn className="w-6 h-6" /> },
   {
     href: "/tours/new-tour",
     label: "New Tour",
     icon: <MdOutlineAddLocationAlt className="w-6 h-6" />,
   },
+  { href: "/tours", label: "Tours", icon: <MdOutlineLocationOn className="w-6 h-6" /> },
   {
     href: "/profile",
     label: "Profile",
