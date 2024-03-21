@@ -35,12 +35,12 @@ function HomePage() {
         </div>
       </div>
 
-      <dialog id="my_modal_1" class="modal">
-        <div class="modal-box">
+      <dialog id="my_modal_1" className="modal">
+        <div className="modal-box">
           <Timeline />
-          <div class="modal-action">
+          <div className="modal-action">
             <form method="dialog">
-              <button class="btn">Close</button>
+              <button className="btn">Close</button>
             </form>
           </div>
         </div>
