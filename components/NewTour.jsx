@@ -21,6 +21,7 @@ function NewTour() {
     e.preventDefault();
     const formData = new FormData(e.currentTarget);
     const destination = Object.fromEntries(formData.entries());
+    console.log(destination);
     mutate(destination);
   }
 
@@ -37,14 +38,14 @@ function NewTour() {
             type="text"
             className="input input-bordered join-item w-full"
             placeholder="City"
-            name="City"
+            name="city"
             required
           />
           <input
             type="text"
             className="input input-bordered join-item w-full"
             placeholder="Country"
-            name="Country"
+            name="country"
             required
           />
 
