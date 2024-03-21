@@ -12,7 +12,7 @@ function NewTour() {
       if (newTour) {
         return newTour;
       }
-      toast.error("Sorry. We tried our best and found nothing...");
+      toast.error("Sorry, there's no such place...");
       return null;
     },
   });
