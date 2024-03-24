@@ -34,7 +34,7 @@ function NewTour() {
   }
 
   if (isPending) {
-    return <span className="loading loading-lg"></span>;
+    return <span className="loading loading-ring loading-lg"></span>;
   }
 
   return (

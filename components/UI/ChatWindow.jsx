@@ -37,7 +37,7 @@ function ChatWindow(props) {
           </div>
         );
       })}
-      {isPending ? <span className="loading"></span> : null}
+      {isPending ? <span className="loading loading-ring"></span> : null}
     </div>
   );
 }
