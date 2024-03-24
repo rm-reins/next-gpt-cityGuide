@@ -40,7 +40,6 @@ function NewTour() {
   return (
     <div>
       <form onSubmit={handleSubmit} className="max-w-2xl">
-        <h2 className="mb-4 font-bold">Where do you want to go now?</h2>
         <div className="join w-full">
           <input
             type="text"
@@ -62,7 +61,15 @@ function NewTour() {
           </button>
         </div>
       </form>
-      <div className="mt-16">{data ? <TourInfo tour={data} /> : null}</div>
+      <div className="mt-16">
+        {data ? (
+          <TourInfo tour={data} />
+        ) : (
+          <h2 className="mb-4 flex justify-center font-bold">
+            Where do you want to go now?
+          </h2>
+        )}
+      </div>
     </div>
   );
 }

@@ -14,7 +14,7 @@ function Tours() {
   });
 
   return (
-    <div className="w-full">
+    <div className="w-full sm:pb-0 pb-12">
       <div className="flex justify-center w-full mb-12">
         <div className="join w-full max-w-2xl">
           <input
