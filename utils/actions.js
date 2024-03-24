@@ -54,9 +54,14 @@ export async function getAllTours(searchParam) {
         {
           city: {
             contains: searchParam,
+            mode: "insensitive",
           },
+        },
+
+        {
           country: {
             contains: searchParam,
+            mode: "insensitive",
           },
         },
       ],
@@ -119,5 +124,13 @@ export async function genTourRes({ city, country }) {
 export async function createTour(tour) {
   return prisma.tour.create({
     data: tour,
+  });
+}
+
+export async function getTourById(id) {
+  return prisma.tour.findUnique({
+    where: {
+      id,
+    },
   });
 }
