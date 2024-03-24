@@ -106,6 +106,7 @@ export async function genTourRes({ city, country }) {
       ],
       model: "gpt-3.5-turbo",
       temperature: 0,
+      max_tokens: 100,
     });
 
     const data = JSON.parse(resp.choices[0].message.content);
