@@ -6,20 +6,6 @@ function HomePage() {
   return (
     <div className="hero min-h-screen bg-base-200">
       <div className="hero-content text-center flex-col">
-        <div>
-          <h1 className="text-lg font-bold">Application is currently in development</h1>
-
-          <button
-            type="button"
-            className="btn btn-outline"
-            onClick={() => document.getElementById("my_modal_1").showModal()}
-          >
-            Show me the progress!
-          </button>
-        </div>
-
-        <br />
-
         <div className="max-w-lg c">
           <img src="/logo_guide.svg" alt="logo" />
 
@@ -34,17 +20,6 @@ function HomePage() {
           </Link>
         </div>
       </div>
-
-      <dialog id="my_modal_1" className="modal">
-        <div className="modal-box">
-          <Timeline />
-          <div className="modal-action">
-            <form method="dialog">
-              <button className="btn">Close</button>
-            </form>
-          </div>
-        </div>
-      </dialog>
     </div>
   );
 }
