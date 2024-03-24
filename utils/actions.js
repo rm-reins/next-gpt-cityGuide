@@ -1,5 +1,5 @@
 "use server";
-import prisma from "@/prisma/db.js";
+import prisma from "@/prisma/db.ts";
 import OpenAI from "openai";
 
 const openAI = new OpenAI({
