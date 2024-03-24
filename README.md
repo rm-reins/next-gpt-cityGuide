@@ -1,6 +1,10 @@
 This application will help users find interesting places using OpenAI ChatGPT.
-Information about previous searches will be stored so users can access it anytime without nessesity of making another request.
+Information about previous searches is stored, and accessible any time.
 
-Technologies used: Next.js, OpenAI, Tailwind, Shadcn-ui, Authentication (0Auth / Clerk Auth), (mySQL / PostgreSQL)
+Technologies used:
 
-Also I want to try out Prisma for interaction SQL databases in this project.
+- Next.js
+- Tailwind.css + DaisyUI
+- Prisma + PostgreSQL DB hosted on Render
+- Clerk Authentication
+- React Query for cashing
