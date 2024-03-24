@@ -6,12 +6,21 @@ import { getTour, genTourRes, createTour } from "@/utils/actions.js";
 import toast from "react-hot-toast";
 
 function NewTour() {
+  const queryClient = useQueryClient();
   const { mutate, isPending, data } = useMutation({
     mutationFn: async (destination) => {
+      const existTour = await getTour(destination);
+
+      if (existTour) return existTour;
+
       const newTour = await genTourRes(destination);
+
       if (newTour) {
+        await createTour(newTour);
+        queryClient.invalidateQueries({ queryKey: ["tours"] });
         return newTour;
       }
+
       toast.error("Sorry, there's no such place...");
       return null;
     },
@@ -21,7 +30,6 @@ function NewTour() {
     e.preventDefault();
     const formData = new FormData(e.currentTarget);
     const destination = Object.fromEntries(formData.entries());
-    console.log(destination);
     mutate(destination);
   }
 
