@@ -1,6 +1,6 @@
 # UrbanIQ Explorer
 
-> **Note:** This is a legacy app that is being rebuilt with a modern tech stack, improved UI/UX, and refined features.
+> **Note:** This is a legacy app that is being rebuilt with a modern tech stack, improved UI/UX, and refined features **[here](https://github.com/Freemasoid/nextjs-urbaniq-explorer)**.
 
 ## Overview
 
