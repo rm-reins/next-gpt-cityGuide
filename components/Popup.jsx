@@ -11,19 +11,25 @@ export default function Popup({ isOpen, onClose }) {
         </div>
         <div className="card-body">
           <p className="text-muted-foreground">
-            This is a legacy app I&apos;m rewriting with a modern stack,
-            improved UX/UI, and refined features{" "}
+            This is a legacy app, for new version please visit{" "}
+            <a
+              href="https://nextjs-urbaniq-explorer.vercel.app/chat"
+              className="underline font-bold"
+            >
+              Live Demo
+            </a>{" "}
+            or{" "}
             <a
               href="https://github.com/Freemasoid/nextjs-urbaniq-explorer"
               className="underline font-bold"
             >
-              here
-            </a>
-            .
+              GitHub
+            </a>{" "}
+            repo.
           </p>
           <p className="mt-2 text-muted-foreground">
-            Demo login isn&apos;t available due to ChatGPT token usage — this
-            prevents API abuse and ensures user accountability.
+            Demo login isn&apos;t available on this version due to ChatGPT token
+            usage — this prevents API abuse and ensures user accountability.
           </p>
           <p className="mt-2 text-muted-foreground">
             Login is securely handled by{" "}
